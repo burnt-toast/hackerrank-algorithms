@@ -1,3 +1,11 @@
+/*Input: 2 lines of equal length comma separated numbers
+ Example:
+ 	1 4 5
+	2 2 6
+
+ This represents alices and bobs score. Each person gets a point if the array[x] is high than the other person
+ number is suppose to be at least 1 and no more than 100 but no instructions given for error ouput so not validating
+*/
 package main
 
 import "bufio"
@@ -13,8 +21,6 @@ func main() {
 	s.Scan()
 	bob := s.Text()
 
-	fmt.Println("ALice ", alice)
-	fmt.Println("Bob ", bob)
 	alicePoint, bobPoint := getComparisonPoints(alice, bob)
 
 	fmt.Println(alicePoint, bobPoint)
